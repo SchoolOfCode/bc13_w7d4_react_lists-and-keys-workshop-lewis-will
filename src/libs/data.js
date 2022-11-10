@@ -77,6 +77,24 @@ const samplePosts = [
         'A pigeon with a spectacular green plumage stares thoughtfully into the distance.',
     },
   },
+  {
+    postId: 4,
+    title: 'An Ugly Pidgeon',
+    date: '10/11/22',
+    author: 'Squatting Pigeon',
+    text: lorem.generateParagraphs(7),
+    highlights: [
+      lorem.generateWords(3),
+      lorem.generateWords(3),
+      lorem.generateWords(3),
+    ],
+    image: {
+      link:
+        'https://img.buzzfeed.com/buzzfeed-static/static/2017-05/15/13/asset/buzzfeed-prod-fastlane-01/sub-buzz-32011-1494870834-15.jpg',
+      alt:
+        'A pigeon smoking.',
+    },
+  }
 ];
 
 export default samplePosts;

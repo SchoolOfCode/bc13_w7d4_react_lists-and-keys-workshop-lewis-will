@@ -3,12 +3,13 @@ import React from 'react';
 import './index.css';
 
 function Post({key, title, date, author, text, highlights, image}) {
-  return <article id={key} title={title} date={date} author={author} highlights={highlights} img={image}>
-    <h3>{title}</h3><h5>{author}</h5><h6>{date}</h6>
-    <h4>{highlights}</h4>
+  return <article id={key} className={'pigeon'}>
+    <h2>{title}</h2><h5>{author}</h5><h6>{date}</h6>
+        {text}
     <img src={image.link} alt={image.alt}></img>
-    
-    {text}
+    {highlights.map((highlight) => {
+      return <li>{highlight}</li> 
+    })}
   </article>;
 }
 
